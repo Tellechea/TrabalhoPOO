@@ -1,5 +1,5 @@
 package br.ifrn.tads.poo.biblioteca.usuario;
-import br.ifrn.tads.poo.biblioteca.acervo.itemAcervo;
+import br.ifrn.tads.poo.biblioteca.acervo.ItemAcervo;
 
 
 public class Usuario {
@@ -26,7 +26,7 @@ public class Usuario {
 		
 	}
 	
-	itemAcervo escolheritemAcervo(){
+	ItemAcervo escolheritemAcervo(){
 		
 		
 		return null;
