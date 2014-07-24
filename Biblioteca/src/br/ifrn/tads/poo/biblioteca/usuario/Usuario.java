@@ -17,9 +17,9 @@ public class Usuario {
 		this.endereco = b;
 		this.cpf = c;
 		
-		codUsuario = cont;
 		cont ++;
-		
+		codUsuario = cont;
+			
 	}
 	
 	void pagar(){
