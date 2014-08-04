@@ -6,8 +6,8 @@ public class Apostila extends ItemAcervo {
 	
 	private String titulo, autor;
 
-	public Apostila(int a, Date b, String c,String tit,String aut){
-        super (a, b, c);
+	public Apostila(int custo, String cod,String tit,String aut){
+        super (custo, cod);
         titulo = tit;
         autor = aut;
         

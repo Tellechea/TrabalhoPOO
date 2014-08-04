@@ -4,7 +4,7 @@ import java.util.Date;
 import br.ifrn.tads.poo.biblioteca.usuario.Usuario;
 
 import java.text.SimpleDateFormat;
-import java.time.Clock;
+//import java.time.Clock;
 
 
 public class ItemAcervo {
@@ -12,23 +12,21 @@ public class ItemAcervo {
 	protected double custo;
 	protected Date dataAluguel , dataDevolucao;
 	protected String codigoitem;
-	protected boolean pago;
+	protected boolean pago , reservado;
 	
 	public ItemAcervo(){
 	}
         
-        ItemAcervo(int a, Date b, String c){
-            custo = a;
-            dataAluguel = b;
-            codigoitem = c;
+        ItemAcervo(int custo, String cod){
+            this.custo = custo;
+            codigoitem = cod;
             
         }
         
-        ItemAcervo(int a, Date b, String c, boolean d){
-            custo = a;
-            dataAluguel = b;
-            codigoitem = c;
-            pago = d;
+        ItemAcervo(int custo, String cod, boolean pago){
+            this.custo = custo;
+            codigoitem = cod;
+            this.pago = pago;
             
         }
 	
@@ -57,9 +55,9 @@ public class ItemAcervo {
 		// }
 		// se dataDoDia <= dataDevolucao && pago == false{
 		// }
-		// se dataDoDia >= dataDevolucao && pago == false{
+		// se dataDoDia > dataDevolucao && pago == false{
 		// }
-		// se dataDoDia >= dataDevolucao && pago == true{
+		// se dataDoDia > dataDevolucao && pago == true{
 		// }
 		
               
@@ -74,7 +72,17 @@ public class ItemAcervo {
 	}
 	
 	void reservar(Usuario u ){
+		this.reservado = true;
 		
+		
+	}
+
+	public Date getDataDevolucao() {
+		return dataDevolucao;
+	}
+
+	public void setDataDevolucao(Date dataDevolucao) {
+		this.dataDevolucao = dataDevolucao;
 	}
 	
 	
