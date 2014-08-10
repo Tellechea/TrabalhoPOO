@@ -7,8 +7,8 @@ public class Livro extends ItemAcervo {
 	private String titulo, autor, ISBN;
 	private Integer edicao; 
 
-	public Livro(int a, Date b, String c, String tit, String aut, String ISBN, int edic){
-        super (a, b, c);
+	public Livro(int custo, String cod, String tit, String aut, String ISBN, int edic){
+        super (custo, cod);
         titulo = tit;
         autor = aut;
         this.ISBN = ISBN;

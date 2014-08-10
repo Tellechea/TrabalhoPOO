@@ -6,8 +6,8 @@ public class Texto extends ItemAcervo {
 	
 	private String autor;
 
-	public Texto(int a, Date b, String c, String aut){
-        super (a, b, c);
+	public Texto(int custo, String cod, String aut){
+        super (custo, cod);
         autor = aut;
     }
 	
