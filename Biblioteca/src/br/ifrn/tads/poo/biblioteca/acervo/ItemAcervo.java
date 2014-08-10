@@ -80,10 +80,6 @@ public class ItemAcervo {
 	public Date getDataDevolucao() {
 		return dataDevolucao;
 	}
-
-	public void setDataDevolucao(Date dataDevolucao) {
-		this.dataDevolucao = dataDevolucao;
-	}
 	
 	
 	
